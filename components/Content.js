@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Link from 'next/link';
-import Cards from './Cards';
+import Cards from '../components/cards';
 import Footer from './Footer';
 import Course from './Course';
 
