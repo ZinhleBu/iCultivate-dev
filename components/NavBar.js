@@ -37,7 +37,26 @@ const NavBar = () => {
                   Home
                 </RouterLink>
               </NavItem>
-             
+              <NavItem>
+                <RouterLink href="/about" className="nav-link" testId="navbar-about">
+                  About
+                </RouterLink>
+              </NavItem>
+              <NavItem>
+                <RouterLink href="/csr" className="nav-link" testId="navbar-csr">
+                  Courses
+                </RouterLink>
+              </NavItem>
+              <NavItem>
+                <RouterLink href="/ssr" className="nav-link" testId="navbar-ssr">
+                  Pricing
+                </RouterLink>
+              </NavItem>
+              <NavItem>
+                <RouterLink href="/external" className="nav-link" testId="navbar-external">
+                  Contact
+                </RouterLink>
+              </NavItem>
               {user && (
                 <>
                   <NavItem>
