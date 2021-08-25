@@ -1,16 +1,14 @@
 import React from 'react';
-import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 import Tabs from "../components/Tabs"; 
 import Branding from '../components/courses_categories/branding_category/branding';
 
 
-export default withPageAuthRequired(function SSRPage() {
+export default function SSRPage() {
   return (
     <>
       <div className="mb-5" data-testid="csr">
         <h1 data-testid="csr-title">Browse Courses</h1>
         <div data-testid="csr-classes"
-   
        >
         <Tabs> 
        <div label="Branding"> 
@@ -36,4 +34,4 @@ export default withPageAuthRequired(function SSRPage() {
       </div>
     </>
   );
-});
+};

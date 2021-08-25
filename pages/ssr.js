@@ -1,9 +1,8 @@
 import React from 'react';
-import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 import Link from 'next/link';
 
 
-export default function SSRPage({ user }) {
+export default function SSRPage() {
   return (
     <>
       <div className="container" data-testid="ssr">
@@ -275,4 +274,3 @@ export default function SSRPage({ user }) {
   );
 }
 
-export const getServerSideProps = withPageAuthRequired();
