@@ -43,12 +43,12 @@ const NavBar = () => {
                 </RouterLink>
               </NavItem>
               <NavItem>
-                <RouterLink href="/csr" className="nav-link" testId="navbar-csr">
+                <RouterLink href="/csr" className="nav-link" testId="navbar-courses">
                   Courses
                 </RouterLink>
               </NavItem>
               <NavItem>
-                <RouterLink href="/ssr" className="nav-link" testId="navbar-ssr">
+                <RouterLink href="/ssr" className="nav-link" testId="navbar-pricing">
                   Pricing
                 </RouterLink>
               </NavItem>
