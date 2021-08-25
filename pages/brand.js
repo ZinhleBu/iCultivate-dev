@@ -1,11 +1,9 @@
 import React from 'react';
-import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 import Tabs from "../components/Tabs";
 import Branding from '../components/courses_categories/branding_category/branding';
-import Link from 'next/link';
 
 
-export default function brandingCategoryPage({ user }) {
+export default function brandingCategoryPage() {
   return (
     <div className="container" data-testid="csr">
 
@@ -39,4 +37,3 @@ export default function brandingCategoryPage({ user }) {
   );
 }
 
-export const getServerSideProps = withPageAuthRequired();
