@@ -63,7 +63,7 @@ export default function SSRPage() {
           </button>
 
         </div>
-
+        
 
       </div>
       <style jsx>{`

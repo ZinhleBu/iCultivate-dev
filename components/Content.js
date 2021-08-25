@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Cards from '../components/cards';
 import Footer from './Footer';
 import Course from './Course';
-
+import Button from '@material-ui/core/Button';
 
 export default function Content() {
 
@@ -80,8 +80,21 @@ export default function Content() {
           <h1 className="courses-title">
             Popular Courses.
           </h1>
-          <Course />
+          <Course 
+        />
+          <Button
+            variant="outlined"
+            style={{ 
+            position:"absolute",
+            left: "10%",
+            top: "110%",
+            position:"absolute"}}
+            color="primary"
+            href="#">
+            See more
+          </Button>
         </section>
+
         <Footer />
 
         <style jsx>{`
