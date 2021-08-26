@@ -4,6 +4,7 @@ import Cards from '../components/cards';
 import Footer from './Footer';
 import Course from './Course';
 import Button from '@material-ui/core/Button';
+import ComplexGrid from "./ComplexGrid";
 
 export default function Content() {
 
@@ -80,21 +81,44 @@ export default function Content() {
           <h1 className="courses-title">
             Popular Courses.
           </h1>
-          <Course 
-        />
-          <Button
-            variant="outlined"
-            style={{ 
-            position:"absolute",
-            left: "10%",
-            top: "110%",
-            position:"absolute"}}
-            color="primary"
-            href="#">
-            See more
-          </Button>
+          <Course
+          />
+         
         </section>
+        <section className="instructor-sec bg-dark">
 
+        <lottie-player
+          id={"thirdlottie"}
+          autoplay
+          loop
+          mode="normal"
+          src="https://assets6.lottiefiles.com/packages/lf20_wepuwkno.json"
+          style={{ width: "400px", height: "400px", left: "20%", position: "absolute", top: "0%" }}
+        ></lottie-player>
+          {/* <img
+            className="inst-img"
+            src="reinhart-julian-WxM465oM4j4-unsplash.jpg"
+            style={{
+              height:"70%", position: "relative", left: "10%",
+              top: "0", 
+            }}
+          ></img> */}
+          <div className="inst-info">
+          <h1 
+         >Become an instructor</h1>
+          <p>Join the thousands of people who share their skills</p>
+          <button className="btn-instructor ">
+          <Link
+            href={{
+              pathname: '/ssr',
+            }}
+          >
+            <a className="span" href="./pricing.js">Get started</a>
+          </Link>
+        </button>
+          </div>
+
+        </section>
         <Footer />
 
         <style jsx>{`
@@ -180,6 +204,35 @@ export default function Content() {
             transition: .3s all cubic-bezier(.74,.22,.43,.95);
           }
           .btn-get-started:hover {
+            background: #f5ad1d;
+            color: #ffffff;
+            box-shadow: 10px 22px 52px 4px rgba(0,0,0,0.32);            
+            border: #f5ad1d;
+          }
+          .btn-instructor {
+            position: relative;
+            left: 0%;
+            top: 20%;
+            height: 50px;
+            padding-top: 8px;
+            text-decoration: none;
+            color: #000000;
+            width: 150px;
+            background: transparent;
+            border-radius: 25px;
+            border: 1px solid #000000;
+            transition: .3s all cubic-bezier(.74,.22,.43,.95);
+          }
+          .btn-instructor a {
+           
+            text-decoration: none;
+            color: #000000;
+            width: 150px;
+            background: transparent;
+           
+            transition: .3s all cubic-bezier(.74,.22,.43,.95);
+          }
+          .btn-instructor:hover {
             background: #f5ad1d;
             color: #ffffff;
             box-shadow: 10px 22px 52px 4px rgba(0,0,0,0.32);            
@@ -276,7 +329,21 @@ export default function Content() {
             left: 50%;
             transform: translate(-50%,-50%);
           }
-         
+        .instructor-sec {
+          width: 100vw;
+          height:50vh;
+          position: relative;
+          top: 340vh;
+          display: flex;
+          
+        }
+         .inst-info {
+           width: 500px;
+           justify-content:left;
+           text-align: left;
+           position: relative;
+           left: 50%;
+         }
         `}</style>
 
         <style jsx global>{`

@@ -8,7 +8,7 @@ const Footer = () => (
     </p>
   </footer><style jsx>{`
      .footer {
-       top: 450vh;
+       top: 550vh;
        width: 100vw;
        position: absolute;
      }

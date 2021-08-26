@@ -1,4 +1,7 @@
 import React, { useRef } from "react";
+import HoverRating from "../components/HoverRating";
+import Button from '@material-ui/core/Button';
+
 export default function Course() {
 
     const ref = useRef(null);
@@ -28,7 +31,7 @@ export default function Course() {
                             <p className="course-owner">
                                 Colt Steele
                             </p>
-                            <p className="rating">rating</p>
+                            <HoverRating />
                             <h2 className="course-price">R18</h2>
                         </a></li>
                     <li className="category-card"><a href="/design" className="category-item">
@@ -43,6 +46,8 @@ export default function Course() {
                         <p className="course-owner">
                             Simphiwe Dana
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R35</h2>
                     </a></li>
                     <li className="category-card"><a href="/photography" className="category-item">
                         <div className="categoryImg-3">
@@ -53,6 +58,8 @@ export default function Course() {
                         <p className="course-owner">
                             Brad Pitt
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R24</h2>
                     </a></li>
                     <li className="category-card"><a href="/develpoment" className="category-item">
                         <div className="categoryImg-4">
@@ -63,6 +70,8 @@ export default function Course() {
                         <p className="course-owner">
                             2 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R58</h2>
                     </a></li>
                     <li className="category-card"><a href="/health" className="category-item">
                         <div className="categoryImg-5">
@@ -74,6 +83,8 @@ export default function Course() {
                         <p className="course-owner">
                             9 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R17</h2>
                     </a></li>
                     <li className="category-card"><a href="/math" className="category-item">
                         <div className="categoryImg-6">
@@ -85,6 +96,8 @@ export default function Course() {
                         <p className="course-owner">
                             8 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R68</h2>
                     </a></li>
                     <li className="category-card"><a href="/health" className="category-item">
                         <div className="categoryImg-7">
@@ -96,6 +109,8 @@ export default function Course() {
                         <p className="course-owner">
                             9 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R72</h2>
                     </a></li>
                     <li className="category-card"><a href="/math" className="category-item">
                         <div className="categoryImg-8">
@@ -107,10 +122,24 @@ export default function Course() {
                         <p className="course-owner">
                             8 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R40</h2>
                     </a></li>
 
                 </ul>
-
+                <Button
+                className="see-more-btn"
+            variant="outlined"
+            style={{
+              position: "absolute",
+              left: "45%",
+              top: "130%",
+              position: "absolute"
+            }}
+            color="primary"
+            href="#">
+            See more
+          </Button>
             </div>
 
             <style jsx>{`
@@ -229,7 +258,7 @@ export default function Course() {
             .category-title {
                 position: absolute;
                 font-size: 1.5rem;
-                top: 60%;
+                top: 55%;
                 width: 80%;
                 left: 10%;
                 color: #000000;
@@ -241,7 +270,7 @@ export default function Course() {
                 .course-owner {
                     position: absolute;
                     font-size: 1rem;
-                    top: 89%;
+                    top: 70%;
                     left: 10%;
                     color: #000000;
                     transition: .4s all cubic-bezier(.74, .22, .43, .95);
@@ -251,10 +280,13 @@ export default function Course() {
                 .course-price {
                     position: absolute;
                     font-size: 2rem;
-                    top: 80%;
+                    top: 78%;
                     left: 10%;
                     color: #000000;
                     transition: .4s all cubic-bezier(.74, .22, .43, .95);
+                }
+                .see-more-btn {
+                    top: 20%;
                 }
                
             }
