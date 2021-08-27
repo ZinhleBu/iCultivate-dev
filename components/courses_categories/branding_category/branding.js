@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import HoverRating from "../../../components/HoverRating";
+
 export default function Branding() {
 
     const ref = useRef(null);
@@ -29,8 +31,8 @@ export default function Branding() {
                             </h1>
                             <p className="course-owner">
                                 Colt Steele
-                            </p>
-                            <p className="rating"></p>
+                            </p> <HoverRating />
+                            <h2 className="course-price">R18</h2>
                         </a></li>
                     <li className="category-card"><a href="/design" className="category-item">
 
@@ -44,6 +46,8 @@ export default function Branding() {
                         <p className="course-owner">
                             Simphiwe Dana
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R18</h2>
                     </a></li>
                     <li className="category-card"><a href="/photography" className="category-item">
                         <div className="categoryImg-3">
@@ -54,6 +58,8 @@ export default function Branding() {
                         <p className="course-owner">
                             Brad Pitt
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R18</h2>
                     </a></li>
                     <li className="category-card"><a href="/develpoment" className="category-item">
                         <div className="categoryImg-4">
@@ -64,6 +70,8 @@ export default function Branding() {
                         <p className="course-owner">
                             2 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R18</h2>
                     </a></li>
                     <li className="category-card"><a href="/health" className="category-item">
                         <div className="categoryImg-5">
@@ -75,6 +83,8 @@ export default function Branding() {
                         <p className="course-owner">
                             9 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R18</h2>
                     </a></li>
                     <li className="category-card"><a href="/math" className="category-item">
                         <div className="categoryImg-6">
@@ -86,6 +96,8 @@ export default function Branding() {
                         <p className="course-owner">
                             8 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R18</h2>
                     </a></li>
                     <li className="category-card"><a href="/health" className="category-item">
                         <div className="categoryImg-7">
@@ -97,6 +109,8 @@ export default function Branding() {
                         <p className="course-owner">
                             9 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R18</h2>
                     </a></li>
                     <li className="category-card"><a href="/math" className="category-item">
                         <div className="categoryImg-8">
@@ -108,6 +122,8 @@ export default function Branding() {
                         <p className="course-owner">
                             8 Courses
                         </p>
+                        <HoverRating />
+                            <h2 className="course-price">R18</h2>
                     </a></li>
 
                 </ul>
@@ -162,7 +178,7 @@ export default function Branding() {
                 margin: 20px;
                 position: relative;
                 background: #f5ad1d;
-                height: 350px;
+                height: 450px;
                 box-shadow: 10px 22px 52px 4px rgba(0,0,0,0.12);            
                 border: #F55353;
                 border-radius:20px;
@@ -180,7 +196,7 @@ export default function Branding() {
             width: 100%;
             background: #ffffff;
             border-radius: 20px;
-            height: 100%;
+            height: 450px;
             position: absolute;
             transition: .4s all cubic-bezier(.74, .22, .43, .95);
         }
@@ -259,7 +275,7 @@ export default function Branding() {
             .category-title {
                 position: absolute;
                 font-size: 1.5rem;
-                top: 60%;
+                top: 55%;
                 width: 80%;
                 left: 10%;
                 color: #000000;
@@ -280,16 +296,14 @@ export default function Branding() {
                 .course-owner :hover {
                     color: #f5ad1d;
                 }
-                .course-owner {
+                
+                .course-price {
                     position: absolute;
-                    font-size: 1rem;
-                    top: 75%;
+                    font-size: 2rem;
+                    top: 80%;
                     left: 10%;
                     color: #000000;
                     transition: .4s all cubic-bezier(.74, .22, .43, .95);
-                }
-                .course-owner:hover {
-                    color: #f5ad1d;
                 }
             }
         `}</style>
