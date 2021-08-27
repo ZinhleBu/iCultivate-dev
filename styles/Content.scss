@@ -1,0 +1,257 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+}
+
+.container-main {
+    width: 100%;
+    height: 100%;
+    padding: 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .landing {
+        width: 80vw;
+        height: 70vh;
+        display: grid;
+        .title {
+            margin: 0;
+            line-height: 1.15;
+            font-size: 4rem;
+            left: 10%;
+            top: 0%;
+            width: auto;
+            position: relative;
+            color: #f5ad1d;
+        }
+        .title,
+        .description {
+            text-align: left;
+            width: 300px;
+        }
+        .description {
+            line-height: 1.5;
+            width: 70%;
+            font-size: 1.5rem;
+            font-weight: 300;
+            position: relative;
+            top: 0%;
+            left: 10%;
+            @media screen and (min-width: 900px) {
+                width: 30%;
+            }
+        }
+        #firstlottie {
+            width: 250px;
+            height: auto;
+            left: 10%;
+            position: relative;
+            top: 20%;
+            @media screen and (min-width: 900px) {
+                position: absolute;
+                top: 20%;
+                width: 500px;
+                left: 50%;
+            }
+        }
+        .btn-get-started {
+            position: relative;
+            left: 10%;
+            top: 70%;
+            height: 50px;
+            padding-top: 8px;
+            text-decoration: none;
+            color: #000000;
+            width: 150px;
+            background: transparent;
+            border-radius: 25px;
+            border: 1px solid #000000;
+            transition: .3s all cubic-bezier(.74, .22, .43, .95);
+        }
+        .btn-get-started a {
+            text-decoration: none;
+            color: #000000;
+            width: 150px;
+            background: transparent;
+            transition: .3s all cubic-bezier(.74, .22, .43, .95);
+        }
+        .btn-get-started:hover {
+            background: #f5ad1d;
+            color: #ffffff;
+            box-shadow: 10px 22px 52px 4px rgba(0, 0, 0, 0.32);
+            border: #f5ad1d;
+        }
+        .tick-1 {
+            position: relative;
+            left: 10%;
+            margin-top: 20%;
+            @media screen and (min-width: 600px) {
+                position: relative;
+                left: 10%;
+                margin-top: 10%;
+            }
+            @media screen and (min-width: 950px) {
+                position: relative;
+                left: 10%;
+                margin-top: 8%;
+            }
+            @media screen and (min-width: 1400px) {
+                position: relative;
+                left: 10%;
+                margin-top: 5%;
+            }
+        }
+        .tick-2 {
+            position: relative;
+            left: 10%;
+            margin-top: 2%;
+        }
+    }
+    .info-section {
+        width: 100%;
+        min-height: 700px;
+        position: relative;
+        display: flex;
+        margin-top: 20%;
+        align-content: centre;
+        .info-title {
+            font-size: 3rem;
+            position: relative;
+        }
+    }
+    .banner-strip {
+        width: 100vw;
+        height: 20vh;
+        background: #f5ad1d;
+        position: relative;
+        top: 200vh;
+    }
+    .how-to-section {
+        width: 80vw;
+        height: 100vh;
+        position: relative;
+        top: 210vh;
+        display: flex;
+        flex-direction: row;
+        align-content: centre;
+        .inner-section-1 {
+            position: relative;
+            width: 100%;
+            justify-content: space-around;
+            height: 100%;
+            .how-to-heading {
+                font-size: 30px;
+                color: #f5ad1d;
+                text-align: left;
+                position: relative;
+                top: 10%;
+            }
+            .how-to-title {
+                text-align: left;
+                width: 270px;
+                position: relative;
+                top: 10%;
+            }
+            .how-to-info {
+                line-height: 1.5;
+                width: 70%;
+                font-size: 1.5rem;
+                font-weight: 300;
+                position: relative;
+                top: 15%;
+                @media screen and (min-width: 900px) {
+                    width: 30%;
+                }
+            }
+            #secondlottie {
+                width: 350px;
+                height: auto;
+                position: relative;
+                top: 20%;
+                @media screen and (min-width: 900px) {
+                    position: absolute;
+                    top: 20%;
+                    width: 550px;
+                    left: 50%;
+                }
+            }
+        }
+    }
+    .course-section {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        top: 220vh;
+        align-content: centre;
+        .courses-title {
+            font-size: 3rem;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+        }
+        .browse-description {
+            line-height: 1.5;
+            width: 70%;
+            font-size: 1.5rem;
+            font-weight: 300;
+            position: relative;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+    }
+    .instructor-sec {
+        width: 100vw;
+        height: 50vh;
+        position: relative;
+        display: flex;
+        top: 650vh;
+    }
+    .inst-info {
+        width: 300px;
+        justify-content: left;
+        text-align: left;
+        position: relative;
+        left: 0%;
+    }
+    .btn-instructor {
+        position: relative;
+        left: 0%;
+        top: 20%;
+        height: 50px;
+        padding-top: 8px;
+        text-decoration: none;
+        color: #000000;
+        width: 150px;
+        background: transparent;
+        border-radius: 25px;
+        border: 1px solid #000000;
+        transition: .3s all cubic-bezier(.74, .22, .43, .95);
+    }
+    .btn-instructor a {
+        text-decoration: none;
+        color: #000000;
+        width: 150px;
+        background: transparent;
+        transition: .3s all cubic-bezier(.74, .22, .43, .95);
+    }
+    .btn-instructor:hover {
+        background: #f5ad1d;
+        color: #ffffff;
+        box-shadow: 10px 22px 52px 4px rgba(0, 0, 0, 0.32);
+        border: #f5ad1d;
+    }
+}

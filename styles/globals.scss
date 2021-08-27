@@ -1,8 +1,5 @@
 body,
 html {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -22,15 +19,6 @@ p code {
     left: 0%;
     width: 8%;
     height: 8%;
-}
-
-#__next {
-    height: 100%;
-    width: 100%;
-}
-
-#nav-mobile {
-    height: 170vh;
 }
 
 .btn-primary {
@@ -59,7 +47,7 @@ p code {
 }
 
 .nav-container {
-    background: #f5ad1d;
+    background: #eeeeee;
     z-index: 1;
 }
 
@@ -108,38 +96,39 @@ p code {
     padding-top: 20px;
 }
 
-.category-ul {
-    list-style: none;
+.category-container {
+    position: relative;
     width: 80%;
-    height: 60%;
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    flex-direction: row;
-}
-
-@media (max-width: 1200px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-@media (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-@media (max-width: 800px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-@media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    top: 50%;
+    .category-ul {
+        list-style: none;
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        flex-direction: row;
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @media (max-width: 800px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
 }
 
 footer {

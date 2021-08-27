@@ -1,4 +1,4 @@
 
 module.exports = {
-  poweredByHeader: false
+  poweredByHeader: true
 };

@@ -12,14 +12,8 @@ export default function Course() {
     return (
 
 
-        <div className="info-section">
 
-            <p className="browse-description">
-                Choose from a selection of our most popular courses that have helped students
-                throughout the globe to reach their fullest potential.
-            </p>
-
-            <div className="category-container">
+            <><div className="category-container">
                 <ul className="category-ul">
                     <li className="category-card">
                         <a href="/coleSteele" className="category-item">
@@ -47,7 +41,7 @@ export default function Course() {
                             Simphiwe Dana
                         </p>
                         <HoverRating />
-                            <h2 className="course-price">R35</h2>
+                        <h2 className="course-price">R35</h2>
                     </a></li>
                     <li className="category-card"><a href="/photography" className="category-item">
                         <div className="categoryImg-3">
@@ -59,7 +53,7 @@ export default function Course() {
                             Brad Pitt
                         </p>
                         <HoverRating />
-                            <h2 className="course-price">R24</h2>
+                        <h2 className="course-price">R24</h2>
                     </a></li>
                     <li className="category-card"><a href="/develpoment" className="category-item">
                         <div className="categoryImg-4">
@@ -71,7 +65,7 @@ export default function Course() {
                             2 Courses
                         </p>
                         <HoverRating />
-                            <h2 className="course-price">R58</h2>
+                        <h2 className="course-price">R58</h2>
                     </a></li>
                     <li className="category-card"><a href="/health" className="category-item">
                         <div className="categoryImg-5">
@@ -84,7 +78,7 @@ export default function Course() {
                             9 Courses
                         </p>
                         <HoverRating />
-                            <h2 className="course-price">R17</h2>
+                        <h2 className="course-price">R17</h2>
                     </a></li>
                     <li className="category-card"><a href="/math" className="category-item">
                         <div className="categoryImg-6">
@@ -97,7 +91,7 @@ export default function Course() {
                             8 Courses
                         </p>
                         <HoverRating />
-                            <h2 className="course-price">R68</h2>
+                        <h2 className="course-price">R68</h2>
                     </a></li>
                     <li className="category-card"><a href="/health" className="category-item">
                         <div className="categoryImg-7">
@@ -110,7 +104,7 @@ export default function Course() {
                             9 Courses
                         </p>
                         <HoverRating />
-                            <h2 className="course-price">R72</h2>
+                        <h2 className="course-price">R72</h2>
                     </a></li>
                     <li className="category-card"><a href="/math" className="category-item">
                         <div className="categoryImg-8">
@@ -123,181 +117,16 @@ export default function Course() {
                             8 Courses
                         </p>
                         <HoverRating />
-                            <h2 className="course-price">R40</h2>
+                        <h2 className="course-price">R40</h2>
                     </a></li>
 
                 </ul>
-                <Button
-                className="see-more-btn"
-            variant="outlined"
-            style={{
-              position: "absolute",
-              left: "45%",
-              top: "130%",
-              position: "absolute"
-            }}
-            color="primary"
-            href="#">
-            See more
-          </Button>
-            </div>
-
-            <style jsx>{`
-            
-          .browse-description {
-            line-height: 1.5;
-            width: 30%;
-            font-size: 1.5rem;
-            font-weight: 300;
-            position: absolute;
-            top:15%;
-            transform: translate(-50%, -50%);
-
-            left: 50%;
-          }
-            
-            .category-card {
-                min-width: 250px;
-                max-width: 300px;
-                height: 450px;
-                margin: 20px;
-                position: relative;
-                box-shadow: 10px 22px 52px 4px rgba(0,0,0,0.12);            
-                border: #F55353;
-                border-radius:20px;
-                transition: .4s all cubic-bezier(.74, .22, .43, .95);
-            }
-
-                .category-card:hover {
-                    color: #f5ad1d;
-                    box-shadow: 10px 22px 52px 4px rgba(0,0,0,0.22);            
-                    border: #F55353;
-                    transform: scale(1.1);
-                }
-
-        .category-item {
-            width: 100%;
-            background: #ffffff;
-            border-radius: 20px;
-            height: 100%;
-            left: 0;
-            transition: .4s all cubic-bezier(.74, .22, .43, .95);
-        }
-        .categoryImg-1 {
-            width: 100%;
-            height: 50%;
-            background: url('./slidebean-p2E8RQDZ-Zg-unsplash.jpg');
-            background-size: cover;
-            border-radius: 20px 20px 0 0;
-            position: absolute;
-
-            
-        }
-        .categoryImg-2 {
-            width: 100%;
-            height: 50%;
-            background: url('./balazs-ketyi-_x335IZXxfc-unsplash.jpg');
-            background-size: cover;
-            border-radius: 20px 20px 0 0;
-            position: absolute;
-
-            
-        }
-        .categoryImg-3 {
-            width: 100%;
-            height: 50%;
-            background: url('./reinhart-julian-WxM465oM4j4-unsplash.jpg');
-            background-size: cover;
-            border-radius: 20px 20px 0 0;
-            position: absolute;
-        }
-        .categoryImg-4 {
-            width: 100%;
-            height: 50%;
-            background: url('./ferenc-almasi-eYpcLDXHVb0-unsplash.jpg');
-            background-size: cover;
-            border-radius: 20px 20px 0 0;
-            position: absolute;
-        }
-
-        .categoryImg-5 {
-            width: 100%;
-            height: 50%;
-            background: url('./charisse-kenion-hd41GESb3ZY-unsplash.jpg');
-            background-size: cover;
-            border-radius: 20px 20px 0 0;
-            position: absolute;
-        }
-
-        .categoryImg-6 {
-            width: 100%;
-            height: 50%;
-            background: url('./jakob-owens-CiUR8zISX60-unsplash.jpg');
-            background-size: cover;
-            border-radius: 20px 20px 0 0;
-            position: absolute;
-        }
-
-        .categoryImg-7 {
-            width: 100%;
-            height: 50%;
-            background: url('./charisse-kenion-hd41GESb3ZY-unsplash.jpg');
-            background-size: cover;
-            border-radius: 20px 20px 0 0;
-            position: absolute;
-        }
-
-        .categoryImg-8 {
-            width: 100%;
-            height: 50%;
-            background: url('./charisse-kenion-hd41GESb3ZY-unsplash.jpg');
-            background-size: cover;
-            border-radius: 20px 20px 0 0;
-            position: absolute;
-        }
-            .category-title {
-                position: absolute;
-                font-size: 1.5rem;
-                top: 55%;
-                width: 80%;
-                left: 10%;
-                color: #000000;
-                transition: .4s all cubic-bezier(.74, .22, .43, .95);
-            }
-                .category-title:hover {
-                    color: #f5ad1d;
-                }
-                .course-owner {
-                    position: absolute;
-                    font-size: 1rem;
-                    top: 70%;
-                    left: 10%;
-                    color: #000000;
-                    transition: .4s all cubic-bezier(.74, .22, .43, .95);
-                    
-                }
                 
-                .course-price {
-                    position: absolute;
-                    font-size: 2rem;
-                    top: 78%;
-                    left: 10%;
-                    color: #000000;
-                    transition: .4s all cubic-bezier(.74, .22, .43, .95);
-                }
-                .see-more-btn {
-                    top: 20%;
-                }
-               
-            }
-        `}</style>
+            </div></>
 
-            <style jsx global>{`
+           
 
-            `}</style>
-
-        </div>
-
+       
     )
 
 };

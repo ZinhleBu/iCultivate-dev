@@ -21,8 +21,8 @@ const NavBar = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="nav-container" data-testid="navbar">
-      <Navbar color="light" light expand="md">
+    <div className="nav-container " data-testid="navbar">
+      <Navbar color="#fff" light expand="md">
         <Container>
           <NavbarBrand className="logo">
             <img src="https://i.pinimg.com/originals/57/b5/43/57b543e16f16d13a4c1411aa99a599dd.jpg" width="100" height="100" left="0%"></img>
