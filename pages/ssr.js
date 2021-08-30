@@ -97,23 +97,24 @@ export default function SSRPage() {
 
   .container-pricing {
     width: 100%;
-    top: 25%;
+    top: 20%;
     position: absolute;
     height: 10vh;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
     text-align: center;
   }
   .container-sub {
-    display: flex;
-    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 70%;
-    width: 80%;
-    height: 50%
+    top: 20vh;
+    width: 100%;
+    height: 50vh
   }
   .sub-free {
-    min-height: 700px;
+    min-height: 600px;
     min-width: 300px;
     margin-right:50px;
     border: 1px solid #f5ad1d;
@@ -123,7 +124,7 @@ export default function SSRPage() {
     position: relative;
     transition: all .3s ease-in-out;
     padding-top: 10%;
-    padding-left: 3%;
+    padding-left: 13%;
   }
   .sub-free:hover {
     transform: scale(1.02);
@@ -134,7 +135,7 @@ export default function SSRPage() {
   }
  
   .sub-basic {
-    min-height: 700px;
+    min-height: 600px;
     min-width: 300px;
     margin-right:50px;
     border: 1px solid #f5ad1d;
@@ -144,7 +145,7 @@ export default function SSRPage() {
     position: relative;
     transition: all .3s ease-in-out;
     padding-top: 10%;
-    padding-left: 3%;
+    padding-left: 13%;
   }
   .sub-basic:hover {
     background: #f5ad1d;
@@ -154,7 +155,7 @@ export default function SSRPage() {
   }
 
   .sub-pro {
-    min-height: 700px;
+    min-height: 600px;
     min-width: 300px;
     margin-right:50px;
     border: 1px solid #f5ad1d;
@@ -164,7 +165,7 @@ export default function SSRPage() {
     position: relative;
     transition: .3s all cubic-bezier(.74,.22,.43,.95);
     padding-top: 10%;
-    padding-left: 3%;
+    padding-left: 13%;
   }
   .sub-pro:hover {
     transform: scale(1.02);
@@ -173,7 +174,7 @@ export default function SSRPage() {
 
   }
   .sub-teach {
-    min-height: 700px;
+    min-height: 600px;
     min-width: 300px;
     margin-right:50px;
     border: 1px solid #f5ad1d;
@@ -184,7 +185,7 @@ export default function SSRPage() {
     transform: scale (1);
     transition: .3s all cubic-bezier(.74,.22,.43,.95);
     padding-top: 10%;
-    padding-left: 5%;
+    padding-left: 13%;
   }
   .sub-teach:hover {
     transform: scale(1.02);
@@ -238,12 +239,12 @@ export default function SSRPage() {
   
   .pricing-info {
     display: flex;
-    width:300px;
+    width:250px;
     height: 40%;
     flex-direction: column;
     left: 40%;
     position: relative;
-    top:70%;
+    top:60%;
     transform: translate(-50%, -50%);
 
   }

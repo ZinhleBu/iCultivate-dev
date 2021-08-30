@@ -4,67 +4,45 @@ import Loading from '../components/Loading';
 import ErrorMessage from '../components/ErrorMessage';
 import Highlight from '../components/Highlight';
 
-function External() {
-  const [state, setState] = useState({ isLoading: false, response: undefined, error: undefined });
-
-  const callApi = async () => {
-    setState(previous => ({ ...previous, isLoading: true }))
-
-    try {
-      const response = await fetch('/api/shows');
-      const data = await response.json();
-
-      setState(previous => ({ ...previous, response: data, error: undefined }))
-    } catch (error) {
-      setState(previous => ({ ...previous, response: undefined, error }))
-    } finally {
-      setState(previous => ({ ...previous, isLoading: false }))
-    }
-  };
-
-  const handle = (event, fn) => {
-    event.preventDefault();
-    fn();
-  };
-
-  const { isLoading, response, error } = state;
+export default function External() {
 
   return (
-    <>
-      <div className="mb-5" data-testid="external">
-        <h1 data-testid="external-title">External API</h1>
-        <div data-testid="external-text">
-          <p className="lead">
-            Ping an external API by clicking the button below
-          </p>
-          <p>
-          This will call a local API on port 3001 that would have been started if you run <code>npm run dev</code>.
-          </p>
-          <p>
-          An access token is sent as part of the request's <code>Authorization</code> header and the API will validate 
-          it using the API's audience value. The audience is the identifier of the API that you want to call (see{" "}
-          <a href="https://auth0.com/docs/get-started/dashboard/tenant-settings#api-authorization-settings">
-            API Authorization Settings
-          </a>{" "}
-          for more info).
-          </p>
+    <div className="mb-5" data-testid="external">
+      <h1 data-testid="external-title">Contact Us</h1>
+      <div data-testid="external-text">
+        <p className="lead">
+          Have any Questions? We'd love to hear from you.
+        </p>
+        <Button
+          variant="contained"
+          color="primart"
+          className="mt-5"
+          style={{top:"500px", left:"40px",position:"relative", zIndex:"2"}}
+        >Visit Press Page</Button>
+      </div>
+      <div className="contact-section">
+        <div className="press">
+          <h2>Press</h2>
+          <p className="inactive-sb">
+            Are you interested in our latest Courses,
+            need to get in touch with us?</p>
+
         </div>
-        <Button color="primary" className="mt-5" onClick={e => handle(e, callApi)} data-testid="external-action">
-          Ping API
-        </Button>
+        <div className="support">
+          <h2>Help and Support</h2>
+          <p className="inactive-sb">If you need any help dont hesitate to give us a call or email us.</p>
+
+        </div>
+        <div className="sales">
+          <h2>Sales</h2>
+          <p className="inactive-sb">
+            Get in touch with our team to see how we can work together.
+          </p>
+
+        </div>
       </div>
-      <div className="result-block-container">
-        {isLoading && <Loading />}
-        {(error || response) && (
-          <div className="result-block" data-testid="external-result">
-            <h6 className="muted">Result</h6>
-            {error && <ErrorMessage>{error.message}</ErrorMessage>}
-            {response && <Highlight>{JSON.stringify(response, null, 2)}</Highlight>}
-          </div>
-        )}
-      </div>
-    </>
+    </div>
   );
 }
 
-export default External;
+

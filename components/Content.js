@@ -23,8 +23,11 @@ export default function Content() {
           <h1 className="title" data-testid="title">iDream, iCan, iCultivate
           </h1>
           <h2 className="description" >
-            This is just dummy text I placed here
-            because i don’t want you to get bored.
+            Welcome to the
+            cultivation station. You’re probably on this site because you have a dream,
+            a goal or a passion you would like to cultivate into a potential career. We
+            would really like to get to know you and what your interests are to better
+            customize your experince on iCultivate.
           </h2>
           <button className="btn-get-started ">
             <Link
@@ -35,8 +38,8 @@ export default function Content() {
               <a className="span" href="./pricing.js">Get started</a>
             </Link>
           </button>
-          <div className="tick-1"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" margin="10px" width="24px" fill="#000000"><rect fill="none" height="24" width="24" /><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z" /></svg>Skilled and experienced couches.</div>
-          <div className="tick-2"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" margin="10px" width="24px" fill="#000000"><rect fill="none" height="24" width="24" /><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z" /></svg>Supportive couching.</div>
+          <div className="tick-1"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" margin="10px" width="24px" fill="#000000"><rect fill="none" height="24" width="24" /><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z" /></svg>Skilled and experienced coaching.</div>
+          <div className="tick-2"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" margin="10px" width="24px" fill="#000000"><rect fill="none" height="24" width="24" /><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z" /></svg>Supportive coaching.</div>
 
           <lottie-player
             id={"firstlottie"}
@@ -48,8 +51,10 @@ export default function Content() {
 
           <section className="info-section">
             <h1 className="info-title">
-              Over 500+ courses to choose from.
+              A variety courses to choose from.
             </h1>
+<div className="topics"></div>
+
           </section>
         </section>
         <div className="banner-strip">
@@ -57,10 +62,13 @@ export default function Content() {
         </div>
         <section className="how-to-section">
           <div className="inner-section-1">
-            <p className="how-to-heading">How to Start</p>
+            <p className="how-to-heading">Create your account and
+              start learning</p>
             <h1 className="how-to-title">
-              A Very Simple Steps
-              To Create Account And Start Learning.
+              The tutorials on iCultivate are pre-recorded lessons
+              that can be accessed at any time. Need help
+              understanding the tutorial? Chat with the facilitator in
+              the chat box and they will assist you.
             </h1>
             <h2 className="how-to-info">
               A lesson or class is a structured period of time where learning is
@@ -78,130 +86,48 @@ export default function Content() {
         </section>
         <section className="course-section">
           <h1 className="courses-title">
-            Popular Courses.
+            Popular courses and tutorials.
           </h1>
           <p className="browse-description">
-            Choose from a selection of our most popular courses that have helped students
-            throughout the globe to reach their fullest potential.
+            Choose from a selection of our most popular courses that are easy
+            to follow and include great interactive learning activities.
           </p>
+          <div className="price-section">
+            <div className="SB">
+              <h2>Student/Budget<br></br>R25/Month</h2>
+              <p className="active-sb">Mentorship Group Sessions</p>
+              <p className="active-sb">Career Incubator</p>
+              <p className="inactive-sb">Mentor One-on-One</p>
+              <p className="inactive-sb">Skills Workshop</p>
+              <p className="inactive-sb">Skills Tutorial</p>
+              <p className="inactive-sb">Networking and pitch Events</p>
+            </div>
+            <div className="BP">
+            <h2>Budget Pro<br></br>R55/Month</h2>
+              <p className="active-sb">Mentorship Group Sessions</p>
+              <p className="active-sb">Career Incubator</p>
+              <p className="inactive-sb">Mentor One-on-One</p>
+              <p className="inactive-sb">Skills Workshop</p>
+              <p className="inactive-sb">Skills Tutorial</p>
+              <p className="inactive-sb">Networking and pitch Events</p>
+            </div>
+            <div className="PP">
+            <h2>Premium<br></br>R105/Month</h2>
+              <p className="active-sb">Mentorship Group Sessions</p>
+              <p className="active-sb">Career Incubator</p>
+              <p className="inactive-sb">Mentor One-on-One</p>
+              <p className="inactive-sb">Skills Workshop</p>
+              <p className="inactive-sb">Skills Tutorial</p>
+              <p className="inactive-sb">Networking and pitch Events</p>
+            </div>
 
-
-
-          <div className="category-container">
-            <ul className="category-ul">
-              <li className="category-card">
-                <a href="/coleSteele" className="category-item">
-
-                  <div className="categoryImg-1"></div>
-                  <h1 className="category-title">
-                    The complete brand strategy course
-                  </h1>
-                  <p className="course-owner">
-                    Colt Steele
-                  </p>
-                  <HoverRating />
-                  <h2 className="course-price">R18</h2>
-                </a></li>
-              <li className="category-card"><a href="/design" className="category-item">
-
-                <div className="categoryImg-2">
-
-                </div>
-
-                <h1 className="category-title">
-                  Learn UI/UX the right way.
-                </h1>
-                <p className="course-owner">
-                  Simphiwe Dana
-                </p>
-                <HoverRating />
-                <h2 className="course-price">R35</h2>
-              </a></li>
-              <li className="category-card"><a href="/photography" className="category-item">
-                <div className="categoryImg-3">
-                </div>
-                <h1 className="category-title">
-                  Beautiful Photography course.
-                </h1>
-                <p className="course-owner">
-                  Brad Pitt
-                </p>
-                <HoverRating />
-                <h2 className="course-price">R24</h2>
-              </a></li>
-              <li className="category-card"><a href="/develpoment" className="category-item">
-                <div className="categoryImg-4">
-                </div>
-                <h1 className="category-title">
-                  The best Web Development course
-                </h1>
-                <p className="course-owner">
-                  2 Courses
-                </p>
-                <HoverRating />
-                <h2 className="course-price">R58</h2>
-              </a></li>
-              <li className="category-card"><a href="/health" className="category-item">
-                <div className="categoryImg-5">
-
-                </div>
-                <h1 className="category-title">
-                  Printing
-                </h1>
-                <p className="course-owner">
-                  9 Courses
-                </p>
-                <HoverRating />
-                <h2 className="course-price">R17</h2>
-              </a></li>
-              <li className="category-card"><a href="/math" className="category-item">
-                <div className="categoryImg-6">
-
-                </div>
-                <h1 className="category-title">
-                  Video
-                </h1>
-                <p className="course-owner">
-                  8 Courses
-                </p>
-                <HoverRating />
-                <h2 className="course-price">R68</h2>
-              </a></li>
-              <li className="category-card"><a href="/health" className="category-item">
-                <div className="categoryImg-7">
-
-                </div>
-                <h1 className="category-title">
-                  Best Health and Fitness course.
-                </h1>
-                <p className="course-owner">
-                  9 Courses
-                </p>
-                <HoverRating />
-                <h2 className="course-price">R72</h2>
-              </a>
-              </li>
-              <li className="category-card"><a href="/math" className="category-item">
-                <div className="categoryImg-8">
-                </div>
-                <h1 className="category-title">
-                  Video
-                </h1>
-                <p className="course-owner">
-                  8 Courses
-                </p>
-                <HoverRating />
-                <h2 className="course-price">
-                  R40
-                </h2>
-              </a>
-              </li>
-            </ul>
           </div>
+
+
         </section>
 
-       
       </div>
+
     </>
   )
 };

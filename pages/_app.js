@@ -4,7 +4,10 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import initFontAwesome from '../utils/initFontAwesome';
 import '../styles/globals.scss';
 import '../styles/Content.scss';
+import '../styles/Contact.scss';
 import '../styles/Course.scss';
+import '../styles/cards.scss';
+
 
 
 

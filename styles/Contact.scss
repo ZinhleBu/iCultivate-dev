@@ -1,0 +1,28 @@
+.contact-section {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    top: 10vh;
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 70vw;
+    }
+    .press,
+    .support,
+    .sales {
+        text-align: left;
+        padding: 3rem;
+        max-height: 500px;
+        border-radius: 18px;
+        background-color: #ffffff;
+        h2 {
+            margin-top: 20%;
+            margin-bottom: 20%;
+        }
+    }
+}

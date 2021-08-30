@@ -17,7 +17,7 @@ export default function Cards() {
             throughout the globe to reach their fullest potential.
         </p><div className="category-container">
                 <ul className="category-ul">
-                    <li className="category-card">
+                    <li className="category-card-topics">
                         <a href="/brand" className="category-item">
 
                             <lottie-player
@@ -34,7 +34,7 @@ export default function Cards() {
                                 8 Courses
                             </p>
                         </a></li>
-                    <li className="category-card"><a href="/design" className="category-item">
+                    <li className="category-card-topics"><a href="/design" className="category-item">
 
                         <lottie-player
                             autoplay
@@ -51,7 +51,7 @@ export default function Cards() {
                             6 Courses
                         </p>
                     </a></li>
-                    <li className="category-card"><a href="/photography" className="category-item">
+                    <li className="category-card-topics"><a href="/photography" className="category-item">
                         <lottie-player
                             autoplay
                             loop
@@ -67,7 +67,7 @@ export default function Cards() {
                             5 Courses
                         </p>
                     </a></li>
-                    <li className="category-card"><a href="/develpoment" className="category-item">
+                    <li className="category-card-topics"><a href="/develpoment" className="category-item">
                         <h1 className="category-title">
                             Development
                         </h1>
@@ -75,7 +75,7 @@ export default function Cards() {
                             2 Courses
                         </p>
                     </a></li>
-                    <li className="category-card"><a href="/health" className="category-item">
+                    <li className="category-card-topics"><a href="/health" className="category-item">
                         <h1 className="category-title">
                             Printing
                         </h1>
@@ -83,7 +83,7 @@ export default function Cards() {
                             9 Courses
                         </p>
                     </a></li>
-                    <li className="category-card"><a href="/math" className="category-item">
+                    <li className="category-card-topics"><a href="/math" className="category-item">
                         <h1 className="category-title">
                             Video
                         </h1>

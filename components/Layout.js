@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 
 import NavBar from './NavBar';
 
@@ -17,8 +18,8 @@ const Layout = ({ children }) => (
     </Head>
     <main id="app" className="d-flex flex-column w-100 h-100" data-testid="layout">
       <NavBar />
-      <Container className=" mt-5">{children}</Container>
-
+      <Container className=" mt-5 h-100" >{children}</Container>
+      <Footer />
     </main>
   </>
 );

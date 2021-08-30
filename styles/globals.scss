@@ -1,5 +1,6 @@
 body,
 html {
+    background-color: rgb(249, 249, 249);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -12,6 +13,20 @@ code {
 p code {
     color: var(--secondary);
     font-weight: 600;
+}
+
+.active-sb {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    color: #000;
+}
+
+.inactive-sb {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    color: grey;
 }
 
 .logo {
@@ -47,7 +62,7 @@ p code {
 }
 
 .nav-container {
-    background: #eeeeee;
+    background: #f5f5f5;
     z-index: 1;
 }
 
@@ -57,6 +72,43 @@ p code {
 
 .result-block-container .result-block {
     opacity: 1;
+}
+
+.category-container {
+    position: relative;
+    width: 80%;
+    top: 50%;
+    display: grid;
+    height: auto;
+    .category-ul {
+        list-style: none;
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        flex-direction: row;
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @media (max-width: 800px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
 }
 
 .backDrop {
@@ -100,9 +152,10 @@ p code {
     position: relative;
     width: 80%;
     top: 50%;
+    height: auto;
     .category-ul {
         list-style: none;
-        width: 80%;
+        width: 100%;
         height: 60%;
         position: absolute;
         left: 50%;
@@ -129,13 +182,4 @@ p code {
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         }
     }
-}
-
-footer {
-    position: absolute;
-    background: #f5ad1d;
-    box-shadow: 0 -1px 2px 0 #dfe3ec;
-    min-height: 132px;
-    text-align: center;
-    padding: 32px;
 }

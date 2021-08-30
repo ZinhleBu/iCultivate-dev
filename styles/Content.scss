@@ -16,7 +16,6 @@ body {
 
 .container-main {
     width: 100%;
-    height: 100%;
     padding: 0 0.8rem;
     display: flex;
     flex-direction: column;
@@ -24,22 +23,20 @@ body {
     align-items: center;
     .landing {
         width: 80vw;
-        height: 70vh;
+        height: 80vh;
         display: grid;
+        position: relative;
+        top: 10vh;
         .title {
             margin: 0;
             line-height: 1.15;
-            font-size: 4rem;
+            font-size: 3rem;
             left: 10%;
             top: 0%;
-            width: auto;
+            width: 40%;
+            text-align: left;
             position: relative;
             color: #f5ad1d;
-        }
-        .title,
-        .description {
-            text-align: left;
-            width: 300px;
         }
         .description {
             line-height: 1.5;
@@ -47,6 +44,7 @@ body {
             font-size: 1.5rem;
             font-weight: 300;
             position: relative;
+            text-align: left;
             top: 0%;
             left: 10%;
             @media screen and (min-width: 900px) {
@@ -121,31 +119,37 @@ body {
     }
     .info-section {
         width: 100%;
-        min-height: 700px;
+        height: 100vh;
         position: relative;
         display: flex;
-        margin-top: 20%;
+        justify-content: center;
         align-content: centre;
+        top: 50vh;
         .info-title {
             font-size: 3rem;
-            position: relative;
+            height: 100px;
+            left: 50%;
+            top: 10%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            position: absolute;
         }
     }
     .banner-strip {
         width: 100vw;
         height: 20vh;
+        top: 100vh;
         background: #f5ad1d;
         position: relative;
-        top: 200vh;
     }
     .how-to-section {
         width: 80vw;
         height: 100vh;
         position: relative;
-        top: 210vh;
+        top: 110vh;
         display: flex;
         flex-direction: row;
-        align-content: centre;
+        align-content: center;
         .inner-section-1 {
             position: relative;
             width: 100%;
@@ -160,9 +164,13 @@ body {
             }
             .how-to-title {
                 text-align: left;
-                width: 270px;
+                width: 470px;
                 position: relative;
                 top: 10%;
+                font-size: 30px;
+                @media screen and (max-width: 530px) {
+                    width: 80%;
+                }
             }
             .how-to-info {
                 line-height: 1.5;
@@ -190,11 +198,14 @@ body {
         }
     }
     .course-section {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         position: relative;
-        top: 220vh;
-        align-content: centre;
+        top: 80vh;
+        align-content: center;
+        @media screen and (max-width: 720px) {
+            top: 100vh;
+        }
         .courses-title {
             font-size: 3rem;
             position: absolute;
@@ -208,50 +219,40 @@ body {
             font-size: 1.5rem;
             font-weight: 300;
             position: relative;
-            top: 50%;
+            top: 40%;
             transform: translate(-50%, -50%);
             left: 50%;
+            @media screen and (min-width: 950px) {
+                width: 50%;
+            }
         }
     }
-    .instructor-sec {
-        width: 100vw;
-        height: 50vh;
+    .price-section {
+        width: 100%;
         position: relative;
-        display: flex;
-        top: 650vh;
-    }
-    .inst-info {
-        width: 300px;
-        justify-content: left;
-        text-align: left;
-        position: relative;
-        left: 0%;
-    }
-    .btn-instructor {
-        position: relative;
-        left: 0%;
-        top: 20%;
-        height: 50px;
-        padding-top: 8px;
-        text-decoration: none;
-        color: #000000;
-        width: 150px;
-        background: transparent;
-        border-radius: 25px;
-        border: 1px solid #000000;
-        transition: .3s all cubic-bezier(.74, .22, .43, .95);
-    }
-    .btn-instructor a {
-        text-decoration: none;
-        color: #000000;
-        width: 150px;
-        background: transparent;
-        transition: .3s all cubic-bezier(.74, .22, .43, .95);
-    }
-    .btn-instructor:hover {
-        background: #f5ad1d;
-        color: #ffffff;
-        box-shadow: 10px 22px 52px 4px rgba(0, 0, 0, 0.32);
-        border: #f5ad1d;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 50px;
+        top: 40vh;
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 70vw;
+        }
+        .SB,
+        .BP,
+        .PP {
+            text-align: center;
+            padding: 1rem;
+            max-height: 500px;
+            border-radius: 18px;
+            background-color: #ffffff;
+            h2 {
+                margin-top: 20%;
+                margin-bottom: 20%;
+            }
+        }
     }
 }
