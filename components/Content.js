@@ -208,7 +208,9 @@ export default function Content() {
 
 
         </section>
-
+<Footer 
+style={{ top:"100vh"}}
+/>
       </div>
 
     </>

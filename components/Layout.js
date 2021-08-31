@@ -19,7 +19,6 @@ const Layout = ({ children }) => (
     <main id="app" className="d-flex flex-column w-100 h-100" data-testid="layout">
       <NavBar />
       <Container className=" mt-5 h-100" >{children}</Container>
-      <Footer />
     </main>
   </>
 );

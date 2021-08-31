@@ -55,37 +55,8 @@ const Footer = () => (
     <div className="links-section-2">
     </div>
 
-  </footer><style jsx>{`
-  
-     .footer {
-       width: 100vw;
-       display: none;
-       grid-template-columns: 1fr 1fr 1fr;
-       height: 30vh;
-       position: relative;
-     }
-     .links-section {
-      display: grid;
-      grid-template-columns:1fr 1fr 1fr;
-     }
-
-     .ul {
-       position: relative;
-     }
-     .ul-1, .ul-2, .ul-3 {
-       height: 100px;
-       top: 20%;
-       position: relative;
-
-     }
-     li {
-       list-style: none;
-       color: grey;
-     }
-
-
-
- `}</style></>
+  </footer>
+  </>
 
 );
 
