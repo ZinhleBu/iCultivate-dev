@@ -16,7 +16,6 @@ body {
 
 .container-main {
     width: 100%;
-    padding: 0 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +26,9 @@ body {
         display: grid;
         position: relative;
         top: 10vh;
+        @media screen and (min-width: 320px) {
+            height: 90vh;
+        }
         .title {
             margin: 0;
             line-height: 1.15;
@@ -124,7 +126,10 @@ body {
         display: flex;
         justify-content: center;
         align-content: centre;
-        top: 50vh;
+        top: 10vh;
+        @media screen and (max-width: 320px) {
+            top: 20vh;
+        }
         .info-title {
             font-size: 3rem;
             height: 100px;
@@ -132,24 +137,30 @@ body {
             top: 10%;
             text-align: center;
             transform: translate(-50%, -50%);
-            position: absolute;
+            position: relative;
         }
     }
     .banner-strip {
         width: 100vw;
         height: 20vh;
-        top: 100vh;
+        top: 200vh;
         background: #f5ad1d;
         position: relative;
+        @media screen and (max-width: 320px) {
+            top: 260vh;
+        }
     }
     .how-to-section {
         width: 80vw;
         height: 100vh;
         position: relative;
-        top: 110vh;
+        top: 200vh;
         display: flex;
         flex-direction: row;
         align-content: center;
+        @media screen and (max-width: 320px) {
+            top: 260vh;
+        }
         .inner-section-1 {
             position: relative;
             width: 100%;
@@ -161,6 +172,9 @@ body {
                 text-align: left;
                 position: relative;
                 top: 10%;
+                @media screen and (min-width: 320px) {
+                    font-size: 25px;
+                }
             }
             .how-to-title {
                 text-align: left;
@@ -184,7 +198,7 @@ body {
                 }
             }
             #secondlottie {
-                width: 350px;
+                width: 300px;
                 height: auto;
                 position: relative;
                 top: 20%;
@@ -201,14 +215,17 @@ body {
         width: 100%;
         height: 100vh;
         position: relative;
-        top: 80vh;
+        top: 200vh;
         align-content: center;
         @media screen and (max-width: 720px) {
-            top: 100vh;
+            top: 400vh;
+        }
+        @media screen and (max-width: 320px) {
+            top: 370vh;
         }
         .courses-title {
             font-size: 3rem;
-            position: absolute;
+            position: relative;
             left: 50%;
             top: 20%;
             transform: translate(-50%, -50%);

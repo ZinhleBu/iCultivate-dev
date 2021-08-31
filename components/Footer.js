@@ -58,9 +58,8 @@ const Footer = () => (
   </footer><style jsx>{`
   
      .footer {
-       top: 100vh;
        width: 100vw;
-       display: grid;
+       display: none;
        grid-template-columns: 1fr 1fr 1fr;
        height: 30vh;
        position: relative;
