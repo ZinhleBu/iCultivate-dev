@@ -218,7 +218,7 @@ body {
         top: 200vh;
         align-content: center;
         @media screen and (max-width: 720px) {
-            top: 250vh;
+            top: 290vh;
         }
         @media screen and (max-width: 320px) {
             top: 370vh;
@@ -243,32 +243,35 @@ body {
                 width: 50%;
             }
         }
-    }
-    .price-section {
-        width: 100%;
-        position: relative;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 50px;
-        top: 40vh;
-        @media screen and (max-width: 1000px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            width: 70vw;
-        }
-        .SB,
-        .BP,
-        .PP {
-            text-align: center;
-            padding: 1rem;
-            max-height: 500px;
-            border-radius: 18px;
-            background-color: #ffffff;
-            h2 {
-                margin-top: 20%;
-                margin-bottom: 20%;
+        .price-section {
+            width: 100%;
+            position: relative;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 50px;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @media screen and (max-width: 1000px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                width: 70vw;
+            }
+            .SB,
+            .BP,
+            .PP {
+                text-align: center;
+                padding: 1rem;
+                height: fit-content;
+                max-height: 800px;
+                border-radius: 18px;
+                background-color: #ffffff;
+                h2 {
+                    margin-top: 20%;
+                    margin-bottom: 20%;
+                }
             }
         }
     }
