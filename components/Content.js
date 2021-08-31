@@ -53,7 +53,7 @@ export default function Content() {
             <h1 className="info-title">
               A variety courses to choose from.
             </h1>
-<div className="topics"></div>
+            <div className="topics"></div>
 
           </section>
         </section>
@@ -95,30 +95,113 @@ export default function Content() {
           <div className="price-section">
             <div className="SB">
               <h2>Student/Budget<br></br>R25/Month</h2>
-              <p className="active-sb">Mentorship Group Sessions</p>
-              <p className="active-sb">Career Incubator</p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span> Mentorship Group Sessions
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Career Incubator
+              </p>
               <p className="inactive-sb">Mentor One-on-One</p>
               <p className="inactive-sb">Skills Workshop</p>
               <p className="inactive-sb">Skills Tutorial</p>
               <p className="inactive-sb">Networking and pitch Events</p>
             </div>
             <div className="BP">
-            <h2>Budget Pro<br></br>R55/Month</h2>
-              <p className="active-sb">Mentorship Group Sessions</p>
-              <p className="active-sb">Career Incubator</p>
-              <p className="inactive-sb">Mentor One-on-One</p>
-              <p className="inactive-sb">Skills Workshop</p>
-              <p className="inactive-sb">Skills Tutorial</p>
-              <p className="inactive-sb">Networking and pitch Events</p>
+              <h2>Budget Pro<br></br>R55/Month</h2>
+              <h2>Student/Budget<br></br>R25/Month</h2>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span> Mentorship Group Sessions
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Career Incubator
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Mentor One-on-One
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Skills Workshop
+              </p>
+              <p className="inactive-sb">
+              <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Skills Tutorial
+                </p>
+              <p className="inactive-sb">
+              <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Networking and pitch Events
+                </p>
             </div>
             <div className="PP">
-            <h2>Premium<br></br>R105/Month</h2>
-              <p className="active-sb">Mentorship Group Sessions</p>
-              <p className="active-sb">Career Incubator</p>
-              <p className="inactive-sb">Mentor One-on-One</p>
-              <p className="inactive-sb">Skills Workshop</p>
-              <p className="inactive-sb">Skills Tutorial</p>
-              <p className="inactive-sb">Networking and pitch Events</p>
+              <h2>Premium<br></br>R105/Month</h2>
+              <h2>Student/Budget<br></br>R25/Month</h2>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span> Mentorship Group Sessions
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Career Incubator
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Mentor One-on-One
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Skills Workshop
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Skills Tutorial
+              </p>
+              <p className="active-sb">
+                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <span></span>
+                Networking and pitch Events
+              </p>
             </div>
 
           </div>
