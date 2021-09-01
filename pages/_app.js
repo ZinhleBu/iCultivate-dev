@@ -6,8 +6,6 @@ import '../styles/globals.scss';
 import '../styles/Content.scss';
 import '../styles/Contact.scss';
 import '../styles/coleSteele.scss';
-import '../styles/Footer.scss';
-
 import '../styles/Course.scss';
 import '../styles/cards.scss';
 

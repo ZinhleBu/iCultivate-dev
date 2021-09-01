@@ -25,7 +25,7 @@ const NavBar = () => {
       <Navbar color="#fff" light expand="md">
         <Container>
           <NavbarBrand className="logo">
-            <img src="https://i.pinimg.com/originals/57/b5/43/57b543e16f16d13a4c1411aa99a599dd.jpg" width="100" height="100" left="0%"></img>
+            <img src="https://i.pinimg.com/originals/57/b5/43/57b543e16f16d13a4c1411aa99a599dd.jpg" width="60" height="60" left="0%"></img>
           </NavbarBrand>
           <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
@@ -37,7 +37,7 @@ const NavBar = () => {
               </NavItem>
             
               
-                <>
+                
                   <NavItem>
                     <RouterLink href="/about" className="nav-link" testId="navbar-about">
                       About
@@ -49,7 +49,7 @@ const NavBar = () => {
                     </RouterLink>
                   </NavItem>
                   <NavItem>
-                    <RouterLink href="/ssr" className="nav-link" testId="navbar-ssr">
+                    <RouterLink href="/pricing" className="nav-link" testId="navbar-ssr">
                       Pricing
                     </RouterLink>
                   </NavItem>
@@ -58,7 +58,6 @@ const NavBar = () => {
                       Contact
                     </RouterLink>
                   </NavItem>
-                </>
              
             </Nav>
             
