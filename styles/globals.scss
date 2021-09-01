@@ -106,19 +106,6 @@ p code {
     }
 }
 
-.backDrop {
-    width: 100vw;
-    position: absolute;
-    top: 10vh;
-    z-index: 0;
-    left: 0;
-    height: 130%;
-    background-color: #212121;
-    @media (min-width: 400px) {
-        height: 140%;
-    }
-}
-
 .tab-list {
     border-bottom: 1px solid #ccc;
     padding-left: 0;

@@ -91,9 +91,8 @@ const tiers = [
   },
   {
     title: 'Enterprise',
-    price: '30',
+    price: '105',
     description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop','Skills Tutorial', 'Networking and pitch Events'],
-
     buttonText: 'Contact us',
     buttonVariant: 'outlined',
   },
@@ -123,28 +122,7 @@ export default function Pricing() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
-        {/* <Toolbar className={classes.toolbar}>
-          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Company name
-          </Typography>
-          <nav>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Features
-            </Link>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Enterprise
-            </Link>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Support
-            </Link>
-          </nav>
-          <Button href="#" color="primary" variant="outlined" className={classes.link}>
-            Login
-          </Button>
-        </Toolbar> */}
-      </AppBar>
-      {/* Hero unit */}
+     
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
           Pricing
@@ -172,7 +150,7 @@ export default function Pricing() {
                 <CardContent>
                   <div className={classes.cardPricing}>
                     <Typography component="h2" variant="h3" color="textPrimary">
-                      ${tier.price}
+                      R{tier.price}
                     </Typography>
                     <Typography variant="h6" color="textSecondary">
                       /mo

@@ -1,9 +1,11 @@
 import React from 'react';
 import Tabs from "../components/Tabs"; 
 import HoverRating from "../components/HoverRating";
+import Grid from '@material-ui/core/Grid';
 
 import Branding from '../components/courses_categories/branding_category/branding';
 import Footer from '../components/Footer';
+import { Container } from '@material-ui/core';
 
 export default function SSRPage() {
   return (
@@ -13,10 +15,10 @@ export default function SSRPage() {
         <div data-testid="csr-classes"
        >
         <Tabs> 
-       <div label="Branding"> 
+       <Container label="Branding"> 
 
 
-       <div className="category-container">
+         <Grid >
             <ul className="category-ul">
               <li className="category-card">
                 <a href="/coleSteele" className="category-item">
@@ -126,7 +128,8 @@ export default function SSRPage() {
               </a>
               </li>
             </ul>
-          </div>       </div> 
+            </Grid>
+          </Container> 
        <div label="Design"> 
          After 'while, <em>Crocodile</em>! 
        </div> 
