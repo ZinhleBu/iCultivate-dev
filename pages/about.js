@@ -89,7 +89,7 @@ const tiers = [
         buttonVariant: 'contained',
     },
     {
-        title: 'Enterprise',
+        title: 'Premium Pro',
         price: '30',
         description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop', 'Skills Tutorial', 'Networking and pitch Events'],
 
@@ -157,7 +157,7 @@ export default function About() {
                                 <CardContent>
                                     <div className={classes.cardPricing}>
                                         <Typography component="h2" variant="h3" color="textPrimary">
-                                            ${tier.price}
+                                            R{tier.price}
                                         </Typography>
                                         <Typography variant="h6" color="textSecondary">
                                             /mo
