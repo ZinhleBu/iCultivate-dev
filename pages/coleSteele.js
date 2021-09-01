@@ -90,7 +90,7 @@ export default function SSRPage() {
             <p style={{
               fontSize: "20px",
               color: "grey",
-              width: "30%"
+              width: "80%"
             }}>This tutorial series is all about Cultivating your side hustle. The series is made up of four tutorials which are about 10 minutes long. We will provide you with information that can assist you in cultivating your side hustle under these four main areas.</p>
             <div className="tag-popular"
               style={{
