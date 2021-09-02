@@ -24,11 +24,9 @@ export default function Branding() {
 
                         <div className="categoryImg-1"></div>
                         <h1 className="category-title">
-                            The complete brand strategy course
-                        </h1>
+Cultivating your side hustle                        </h1>
                         <p className="course-owner">
-                            Colt Steele
-                        </p>
+                        Kimberly Bediako                        </p>
                         <p className="rating"></p>
                     </a></li>
                 <li className="category-card"><a href="/design" className="category-item">

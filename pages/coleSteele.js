@@ -44,21 +44,22 @@ const useStyles = makeStyles((theme) => ({
     width: '100vw',
     left: '0',
     height: '50vh',
-    backgroundColor: `#212121`
+    backgroundColor: `#212121`,
+    
   },
   csrClasses: {
-    top: '20%',
+    top: '40%',
     position: 'relative'
   },
   csrTitle: {
     color: "#fff",
-    fontSize: "3rem",
+    fontSize: "2rem",
     position: "relative",
   },
   otherCourseSec: {
     position: 'relative',
     height: '100vh',
-    top: '70vh'
+    top: '30vh'
   },
 
   footer: {
@@ -78,8 +79,10 @@ export default function SSRPage() {
 
   return (
     <>
-      <Container fullWidth className="mb-5" data-testid="csr">
-        <div className={classes.backDrop} >
+
+      <div fullWidth  className="mb-5" data-testid="csr">
+      <div className={classes.backDrop} ></div>
+
         <Container className={classes.containerCourseSelected}>
           <div className={classes.csrClasses} data-testid="csr-classes">
 
@@ -136,22 +139,29 @@ export default function SSRPage() {
           </div>
           
         </Container>
-        </div>
        
-        <Container className={classes.otherCourseSec}>
-          <Grid >
+        <Container minHeight="lg" fullWidth className={classes.otherCourseSec}>
+          <Grid  > 
         <ReactVideo
                 src="/Cultivating Sidehustle Freelancing-1.m4v"
-                poster="https://www.example.com/poster.png"
-                primaryColor="red"
+                primaryColor="orange"
+                poster="/Screenshot 2021-09-02 at 08.40.33.png"
+                fluid
                 // other props
             />
-            <Typography variant="h2">
-              Requierments
-            </Typography>
+            <Typography variant="h5">
+<Container spacing="3" >
+<div>Totorial details</div>       
+<div>Tutorial 1: Freelancing</div>
+<div>Tutorial 2: Communication channels for freelancing</div>
+<div>Tutorial 3: Marketing</div>
+<div>Tutorial 4: Finances and pricing right as a freelancer</div>
+</Container>
+</Typography>
+
             </Grid>
         </Container>
-      </Container>
+      </div>
 
 
 
