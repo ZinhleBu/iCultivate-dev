@@ -70,15 +70,15 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignContent: 'centre',
-    top: '120vh',
+    top: '140vh',
    
   },
   bannerStrip: {
     width: '100vw',
     height: '20vh',
-    top: '200vh',
+    top: '120vh',
     background: '#f5ad1d',
-    position: 'absolute',
+    position: 'relative',
   },
   footer: {
     borderTop: `1px solid ${theme.palette.divider}`,

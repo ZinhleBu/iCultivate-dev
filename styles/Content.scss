@@ -139,7 +139,7 @@
         width: 80vw;
         height: fit-content;
         position: relative;
-        top: 100vh;
+        top: 130vh;
         margin-top: 10%;
         margin-bottom: 10%;
         display: flex;
@@ -205,12 +205,12 @@
         height: fit-content;
         flex-direction: column;
         align-content: center;
-        top: 100vh;
+        top: 150vh;
         @media screen and (min-width: 340px) {
-            top: 100vh;
+            top: 150vh;
         }
         @media screen and (min-width: 600px) {
-            top: 100vh;
+            top: 150vh;
         }
         .price-title {
             font-size: 3rem;
