@@ -14,6 +14,8 @@ import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
+import Paper from '@material-ui/core/Paper';
+
 function Copyright() {
      return (
         <Typography variant="body2" color="textSecondary" align="center">
@@ -28,6 +30,7 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
+   
     '@global': {
         ul: {
             margin: 0,
@@ -39,28 +42,19 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: `0px solid ${theme.palette.divider}`,
     },
     abtDesc: {
+        flexGrow: '1',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         justifyContent: 'space-between',
         alignItems: 'center',
 
     },
-    link: {
-        margin: theme.spacing(1, 1.5),
-    },
+    
     heroContent: {
         padding: theme.spacing(8, 0, 6),
     },
-    cardHeader: {
-        backgroundColor:
-            theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[700],
-    },
-    cardPricing: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'baseline',
-        marginBottom: theme.spacing(2),
-    },
+  
+   
     footer: {
         borderTop: `1px solid ${theme.palette.divider}`,
         marginTop: theme.spacing(8),
@@ -73,31 +67,6 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const tiers = [
-    {
-        title: 'Student/Budget',
-        price: '25',
-        description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop', 'Skills Tutorial', 'Networking and pitch Events'],
-        buttonText: 'Sign up for free',
-        buttonVariant: 'outlined',
-    },
-    {
-        title: 'Budget Pro',
-        subheader: 'Most popular',
-        price: '55',
-        description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop', 'Skills Tutorial', 'Networking and pitch Events'],
-        buttonText: 'Get started',
-        buttonVariant: 'contained',
-    },
-    {
-        title: 'Premium Pro',
-        price: '105',
-        description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop', 'Skills Tutorial', 'Networking and pitch Events'],
-
-        buttonText: 'Contact us',
-        buttonVariant: 'outlined',
-    },
-];
 const footers = [
     {
         title: 'Company',
@@ -131,18 +100,22 @@ export default function About() {
                 <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                     About
                 </Typography>
+                <Grid container spacing={23}>
                 <Typography className={classes.abtDesc} variant="h5" spacing={2} align="left" display="flex" color="textSecondary" component="p">
-                    <div >
+                    <Grid item xs="">
+                    <div className={classes.desc} >
                     iCultivate was born from the Youth Power Hack initiative organised by the Youth Power Panel, Restless Development, Project Everyone, and Unilever. Based in South Africa, the team comprises of Sibahle Magadlela and Kimberly Bediako.
                     </div>
-                    <div>
+                    <div className={classes.paper}>
                      iCultivate is an online platform that aims to offer inclusive and sustainable opportunities through an e-learning website and community-based training to cultivate South African youth towards employment and viable entrepreneurs.
                     </div>
+                    </Grid>
                 </Typography>
+                </Grid>
             </Container>
             {/* End hero unit */}
            <Container >
-               
+
            </Container>
             {/* Footer */}
             <Container maxWidth="md" component="footer" className={classes.footer}>

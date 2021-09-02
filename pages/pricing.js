@@ -45,6 +45,19 @@ const useStyles = makeStyles((theme) => ({
   toolbarTitle: {
     flexGrow: 1,
   },
+  priceSection: {
+    width: '100%',
+    position: 'relative',
+    height: 'auto',
+    display: 'grid',
+    gridTemplateColumns: 'auto',
+    gridTemplateRows: '1fr',
+    gap: '50px',
+    top: '10vh',
+    marginBottom:' 20%'
+  }
+  
+  ,
   link: {
     margin: theme.spacing(1, 1.5),
   },
@@ -77,23 +90,28 @@ const tiers = [
   {
     title: 'Student/Budget',
     price: '25',
-    description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop','Skills Tutorial', 'Networking and pitch Events'],
-    buttonText: 'Sign up for free',
+    description: ['Mentorship Group Sessions', 'Career Incubator'],
+    dark: ['Mentor One-on-One', 'Skills Workshop', 'Skills Tutorial', 'Networking and pitch Events'],
+    buttonText: 'Get Started',
     buttonVariant: 'outlined',
   },
   {
     title: 'Budget Pro',
     subheader: 'Most popular',
     price: '55',
-    description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop','Skills Tutorial', 'Networking and pitch Events'],
+    description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop'],
+    dark: [ 'Skills Tutorial', 'Networking and pitch Events'],
+
     buttonText: 'Get started',
     buttonVariant: 'contained',
   },
   {
     title: 'Enterprise',
     price: '105',
-    description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop','Skills Tutorial', 'Networking and pitch Events'],
-    buttonText: 'Contact us',
+    description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop', 'Skills Tutorial', 'Networking and pitch Events'],
+    dark: [ '',''],
+
+    buttonText: 'Get Started ',
     buttonVariant: 'outlined',
   },
 ];
@@ -122,7 +140,6 @@ export default function Pricing() {
   return (
     <React.Fragment>
       <CssBaseline />
-     
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
           Pricing
@@ -133,8 +150,119 @@ export default function Pricing() {
         </Typography>
       </Container>
       {/* End hero unit */}
-      <Container maxWidth="md" component="main">
-        <Grid container spacing={5} alignItems="flex-end">
+      {/* <Grid  className={classes.priceSection}>
+
+        <div className="SB">
+          <h2>Student/Budget<br></br>R25/Month</h2>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span> Mentorship Group Sessions
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Career Incubator
+          </p>
+          <p className="inactive-sb">Mentor One-on-One</p>
+          <p className="inactive-sb">Skills Workshop</p>
+          <p className="inactive-sb">Skills Tutorial</p>
+          <p className="inactive-sb">Networking and pitch Events</p>
+        </div>
+        <div className="BP">
+          <h2>Budget Pro<br></br>R55/Month</h2>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span> Mentorship Group Sessions
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Career Incubator
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Mentor One-on-One
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Skills Workshop
+          </p>
+          <p className="inactive-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Skills Tutorial
+          </p>
+          <p className="inactive-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Networking and pitch Events
+          </p>
+        </div>
+        <div className="PP">
+          <h2>Premium<br></br>R105/Month</h2>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span> Mentorship Group Sessions
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Career Incubator
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Mentor One-on-One
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Skills Workshop
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Skills Tutorial
+          </p>
+          <p className="active-sb">
+            <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+            <span></span>
+            Networking and pitch Events
+          </p>
+        </div>
+
+      </Grid> */}
+      <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (
             // Enterprise card is full width at sm breakpoint
             <Grid item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={4}>
@@ -158,8 +286,15 @@ export default function Pricing() {
                   </div>
                   <ul>
                     {tier.description.map((line) => (
-                      <Typography component="li" variant="subtitle1" align="center" key={line}>
+                      <Typography component="li" variant="subtitle1" color="primary"align="center" key={line}>
                         {line}
+                      </Typography>
+                    ))}
+                  </ul>
+                  <ul>
+                    {tier.dark.map((line2) => (
+                      <Typography component="li" variant="subtitle1" color="dark" align="center" key={line2}>
+                        {line2}
                       </Typography>
                     ))}
                   </ul>
@@ -173,7 +308,6 @@ export default function Pricing() {
             </Grid>
           ))}
         </Grid>
-      </Container>
       {/* Footer */}
       <Container maxWidth="md" component="footer" className={classes.footer}>
         <Grid container spacing={4} justifyContent="space-evenly">
