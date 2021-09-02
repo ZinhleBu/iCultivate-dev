@@ -8,6 +8,7 @@ import '../styles/Contact.scss';
 import '../styles/coleSteele.scss';
 import '../styles/Course.scss';
 import '../styles/cards.scss';
+import '../styles/about.scss';
 
 
 

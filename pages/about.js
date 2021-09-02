@@ -1,23 +1,16 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import StarIcon from '@material-ui/icons/StarBorder';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import Paper from '@material-ui/core/Paper';
+import Image from 'next/image';
 
 function Copyright() {
-     return (
+    return (
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
             <Link color="inherit" href="https://material-ui.com/">
@@ -30,7 +23,7 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
-   
+
     '@global': {
         ul: {
             margin: 0,
@@ -42,19 +35,19 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: `0px solid ${theme.palette.divider}`,
     },
     abtDesc: {
-        flexGrow: '1',
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
+        width: '100%',
+
         justifyContent: 'space-between',
         alignItems: 'center',
 
     },
-    
+
     heroContent: {
         padding: theme.spacing(8, 0, 6),
     },
-  
-   
+
+
     footer: {
         borderTop: `1px solid ${theme.palette.divider}`,
         marginTop: theme.spacing(8),
@@ -91,32 +84,45 @@ export default function About() {
 
     return (
         <React.Fragment>
+
             <CssBaseline />
+            <Container className="heroImg"></Container>
+
             <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
-           
             </AppBar>
             {/* Hero unit */}
-            <Container maxWidth="sm" component="main" className={classes.heroContent}>
+            <Container  component="main" className={classes.heroContent}>
                 <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                     About
                 </Typography>
-                <Grid container spacing={23}>
                 <Typography className={classes.abtDesc} variant="h5" spacing={2} align="left" display="flex" color="textSecondary" component="p">
-                    <Grid item xs="">
                     <div className={classes.desc} >
-                    iCultivate was born from the Youth Power Hack initiative organised by the Youth Power Panel, Restless Development, Project Everyone, and Unilever. Based in South Africa, the team comprises of Sibahle Magadlela and Kimberly Bediako.
+                        iCultivate was born from the Youth Power Hack initiative organised by the Youth Power Panel, Restless Development, Project Everyone, and Unilever. Based in South Africa, the team comprises of Sibahle Magadlela and Kimberly Bediako.
                     </div>
                     <div className={classes.paper}>
-                     iCultivate is an online platform that aims to offer inclusive and sustainable opportunities through an e-learning website and community-based training to cultivate South African youth towards employment and viable entrepreneurs.
+                        iCultivate is an online platform that aims to offer inclusive and sustainable opportunities through an e-learning website and community-based training to cultivate South African youth towards employment and viable entrepreneurs.
                     </div>
-                    </Grid>
                 </Typography>
-                </Grid>
+            </Container>
+            <Container>
+                <Typography variant="h6">
+                    <div>
+
+                        The fundamental goal or vision of iCultivate is to tackle and realise solutions related to the Sustainable Development Goal number 4 (SDG4), which focuses on ensuring "inclusive and equitable quality education" and promoting "lifelong learning opportunities for all" (United Nations 2020).  The world is continuing to integrate digital technology into everyday life, and this is no different in the education sector as the methods used for learning, working, and interacting are also changing. With SDG 4 in mind, our solution aims to contribute specifically to targets 4.3 and 4.4 of the ten targets listed under SDG 4, which are to "reduce barriers to skills development and technical and vocational education and training and provide lifelong learning opportunities for youth''. Target 4.3, which also aligns with iCultrivate's goal, focuses on developing employment opportunities and viable entrepreneurship initiatives.
+                    </div>
+                </Typography>
+            </Container>
+            <Container>
+                <Typography variant="h6">
+                    <div>
+                        Follow iCultivate on social media and lets grow a community of young and able changemakers. Visit the Restless Development Website to learn more about the Youth Power Hack initiative and the fantastic projects they have worked on.
+                    </div>
+                </Typography>
             </Container>
             {/* End hero unit */}
-           <Container >
+            <Container >
 
-           </Container>
+            </Container>
             {/* Footer */}
             <Container maxWidth="md" component="footer" className={classes.footer}>
                 <Grid container spacing={4} justifyContent="space-evenly">

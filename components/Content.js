@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignContent: 'centre',
-    top: '20vh',
+    top: '120vh',
    
   },
   bannerStrip: {
