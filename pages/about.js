@@ -83,19 +83,20 @@ export default function About() {
     const classes = useStyles();
 
     return (
+        
         <React.Fragment>
+            <Container fullWidth className="heroImg"></Container>
 
             <CssBaseline />
-            <Container className="heroImg"></Container>
 
             <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
             </AppBar>
             {/* Hero unit */}
-            <Container  component="main" className={classes.heroContent}>
+            <Container component="main" className={classes.heroContent}>
                 <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                     About
                 </Typography>
-                <Typography className={classes.abtDesc} variant="h5" spacing={2} align="left" display="flex" color="textSecondary" component="p">
+                <Typography  className={classes.abtDesc} variant="h5" spacing={2} align="left" display="flex" color="textSecondary" component="p">
                     <div className={classes.desc} >
                         iCultivate was born from the Youth Power Hack initiative organised by the Youth Power Panel, Restless Development, Project Everyone, and Unilever. Based in South Africa, the team comprises of Sibahle Magadlela and Kimberly Bediako.
                     </div>

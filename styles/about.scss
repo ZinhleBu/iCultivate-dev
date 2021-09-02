@@ -1,9 +1,18 @@
 .heroImg {
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 100vh;
     background: url('../public/PHOTO-2021-09-02-09-32-01.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 0 0 20px 20px;
     position: relative;
+    @media screen and (max-width: 1000px) {
+        height: 60vh;
+    }
+    @media screen and (max-width: 720px) {
+        height: 50vh;
+    }
+    @media screen and (max-width: 350px) {
+        height: 30vh;
+    }
 }
