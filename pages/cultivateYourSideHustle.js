@@ -160,11 +160,7 @@ export default function SSRPage() {
               <div>Tutorial 4: Finances and pricing right as a freelancer</div>
               </Container>
               </Typography>
-          
       </div>
-
-
-
     </>
 
   );
