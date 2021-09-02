@@ -140,8 +140,8 @@ export default function SSRPage() {
           
         </Container>
        
-        <Container minHeight="lg" fullWidth className={classes.otherCourseSec}>
-          <Grid  > 
+        <Container  fullWidth className={classes.otherCourseSec}>
+          
         <ReactVideo
                 src="/Cultivating Sidehustle Freelancing-1.m4v"
                 primaryColor="orange"
@@ -149,18 +149,18 @@ export default function SSRPage() {
                 fluid
                 // other props
             />
-            <Typography variant="h5">
-<Container spacing="3" >
-<div>Totorial details</div>       
-<div>Tutorial 1: Freelancing</div>
-<div>Tutorial 2: Communication channels for freelancing</div>
-<div>Tutorial 3: Marketing</div>
-<div>Tutorial 4: Finances and pricing right as a freelancer</div>
-</Container>
-</Typography>
-
-            </Grid>
-        </Container>
+       </Container>
+       <Typography variant="h5">
+              
+              <Container  >
+              <div>Totorial details</div>       
+              <div>Tutorial 1: Freelancing</div>
+              <div>Tutorial 2: Communication channels for freelancing</div>
+              <div>Tutorial 3: Marketing</div>
+              <div>Tutorial 4: Finances and pricing right as a freelancer</div>
+              </Container>
+              </Typography>
+          
       </div>
 
 

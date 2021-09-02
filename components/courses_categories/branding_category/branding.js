@@ -20,7 +20,7 @@ export default function Branding() {
         <div className="category-container">
             <ul className="category-ul">
                 <li className="category-card">
-                    <a href="/coleSteele" className="category-item">
+                    <a href="/cultivateYourSideHustle" className="category-item">
 
                         <div className="categoryImg-1"></div>
                         <h1 className="category-title">
