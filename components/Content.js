@@ -63,12 +63,22 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'baseline',
     marginBottom: theme.spacing(2),
   },
+  infoSec: {
+    width: '100;',
+    height: '100vh',
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'centre',
+    top: '20vh',
+   
+  },
   bannerStrip: {
     width: '100vw',
     height: '20vh',
-    top: '100vh',
+    top: '200vh',
     background: '#f5ad1d',
-    position: 'relative',
+    position: 'absolute',
   },
   footer: {
     borderTop: `1px solid ${theme.palette.divider}`,
@@ -112,8 +122,8 @@ export default function Content() {
 
   return (
     <>
-      <Container className="container-main " data-testid="content-items">
-        <Container className="landing">
+      <div className="container-main " data-testid="content-items">
+        <div className="landing">
           <h1 className="title" data-testid="title">iDream, iCan, iCultivate
           </h1>
           <h2 className="description" >
@@ -142,191 +152,167 @@ export default function Content() {
             mode="normal"
             src="https://assets5.lottiefiles.com/packages/lf20_bpqri9y8.json"
           ></lottie-player>
-
-          <Container maxWidth="md" className="fluid">
+</div>
+          <Container maxWidth="md" className={classes.infoSec}>
             <h1 className="info-title">
               A variety courses to choose from.
+              <span>Coming soon</span>
             </h1>
             <section className="cards-section">
               <div className="card"></div>
             </section>
           </Container>
-        </Container>
-        <Container  maxWidth="md" className={classes.bannerStrip}>
-          <div className="banner-item"></div>
-        </Container>
-        <Container className="how-to-section">
-          <div className="inner-section-1">
-            <p className="how-to-heading">Create your account and
-              start learning</p>
-            <h1 className="how-to-title">
-              The tutorials on iCultivate are pre-recorded lessons
-              that can be accessed at any time. Need help
-              understanding the tutorial? Chat with the facilitator in
-              the chat box and they will assist you.
+          <Container fullWidth className={classes.bannerStrip}>
+            <div className="banner-item"></div>
+          </Container>
+          <Container className="how-to-section">
+            <div className="inner-section-1">
+              <p className="how-to-heading">Create your account and
+                start learning</p>
+              <h1 className="how-to-title">
+                The tutorials on iCultivate are pre-recorded lessons
+                that can be accessed at any time. Need help
+                understanding the tutorial? Chat with the facilitator in
+                the chat box and they will assist you.
+              </h1>
+              <h2 className="how-to-info">
+                A lesson or class is a structured period of time where learning is
+                intended to occure. it involves one or more students being taught.
+              </h2>
+              <lottie-player
+                id={"secondlottie"}
+                autoplay
+                loop
+                mode="normal"
+                src="https://assets8.lottiefiles.com/packages/lf20_gomzks5q.json"
+              ></lottie-player>
+            </div>
+
+          </Container>
+          <Container className="course-section">
+            <h1 className="price-title">
+              Popular courses and tutorials.
             </h1>
-            <h2 className="how-to-info">
-              A lesson or class is a structured period of time where learning is
-              intended to occure. it involves one or more students being taught.
-            </h2>
-            <lottie-player
-              id={"secondlottie"}
-              autoplay
-              loop
-              mode="normal"
-              src="https://assets8.lottiefiles.com/packages/lf20_gomzks5q.json"
-            ></lottie-player>
-          </div>
+            <p className="price-description">
+              Choose from a selection of our most popular courses that are easy
+              to follow and include great interactive learning activities.
+            </p>
+            <Container maxWidth="md" className="price-section">
 
-        </Container>
-        <Container className="course-section">
-          <h1 className="price-title">
-            Popular courses and tutorials.
-          </h1>
-          <p className="price-description">
-            Choose from a selection of our most popular courses that are easy
-            to follow and include great interactive learning activities.
-          </p>
-          <Container className="price-section">
-            
-            <div className="SB">
-              <h2>Student/Budget<br></br>R25/Month</h2>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span> Mentorship Group Sessions
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Career Incubator
-              </p>
-              <p className="inactive-sb">Mentor One-on-One</p>
-              <p className="inactive-sb">Skills Workshop</p>
-              <p className="inactive-sb">Skills Tutorial</p>
-              <p className="inactive-sb">Networking and pitch Events</p>
-            </div>
-            <div className="BP">
-              <h2>Budget Pro<br></br>R55/Month</h2>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span> Mentorship Group Sessions
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Career Incubator
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Mentor One-on-One
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Skills Workshop
-              </p>
-              <p className="inactive-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Skills Tutorial
-              </p>
-              <p className="inactive-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Networking and pitch Events
-              </p>
-            </div>
-            <div className="PP">
-              <h2>Premium<br></br>R105/Month</h2>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span> Mentorship Group Sessions
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Career Incubator
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Mentor One-on-One
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Skills Workshop
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Skills Tutorial
-              </p>
-              <p className="active-sb">
-                <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <span></span>
-                Networking and pitch Events
-              </p>
-            </div>
+              <div className="SB">
+                <h2>Student/Budget<br></br>R25/Month</h2>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span> Mentorship Group Sessions
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Career Incubator
+                </p>
+                <p className="inactive-sb">Mentor One-on-One</p>
+                <p className="inactive-sb">Skills Workshop</p>
+                <p className="inactive-sb">Skills Tutorial</p>
+                <p className="inactive-sb">Networking and pitch Events</p>
+              </div>
+              <div className="BP">
+                <h2>Budget Pro<br></br>R55/Month</h2>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span> Mentorship Group Sessions
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Career Incubator
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Mentor One-on-One
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Skills Workshop
+                </p>
+                <p className="inactive-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Skills Tutorial
+                </p>
+                <p className="inactive-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Networking and pitch Events
+                </p>
+              </div>
+              <div className="PP">
+                <h2>Premium<br></br>R105/Month</h2>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span> Mentorship Group Sessions
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Career Incubator
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Mentor One-on-One
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Skills Workshop
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Skills Tutorial
+                </p>
+                <p className="active-sb">
+                  <svg xmlns="http://www.w3.org/2000/svg" position="absolute" width="16" height="16" fill="#F4AC1E" margin="20px" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  <span></span>
+                  Networking and pitch Events
+                </p>
+              </div>
 
+            </Container>
           </Container>
-
-          {/* Footer */}
-          <Container maxWidth="md" component="footer" className={classes.footer}>
-            <Grid container spacing={4} justifyContent="space-evenly">
-              {footers.map((footer) => (
-                <Grid item xs={6} sm={3} key={footer.title}>
-                  <Typography variant="h6" color="textPrimary" gutterBottom>
-                    {footer.title}
-                  </Typography>
-                  <ul>
-                    {footer.description.map((item) => (
-                      <li key={item}>
-                        <Link href="#" variant="subtitle1" color="textSecondary">
-                          {item}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </Grid>
-              ))}
-            </Grid>
-            <Box mt={5}>
-              <Copyright />
-            </Box>
-          </Container>
-         
-        </Container>
-      </Container>
+       
+      </div>
+      
     </>
   )
 };

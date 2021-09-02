@@ -111,7 +111,7 @@
         display: flex;
         justify-content: center;
         align-content: centre;
-        top: 10vh;
+        top: 20vh;
         @media screen and (max-width: 320px) {
             top: 20vh;
         }
@@ -216,6 +216,7 @@
             font-size: 3rem;
             position: relative;
             top: 10%;
+            text-align: center;
             height: fit-content;
         }
         .price-description {
@@ -223,6 +224,7 @@
             line-height: 1.5;
             font-size: 1.5rem;
             font-weight: 300;
+            text-align: center;
             top: 0%;
             position: relative;
         }
@@ -234,21 +236,19 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr;
             gap: 50px;
-            top: 30vh;
-            left: 50%;
+            top: 20vh;
             margin-bottom: 20%;
-            transform: translate(-50%, -50%);
             @media screen and (max-width: 1215px) {
                 grid-template-columns: 1fr 1fr;
-                top: 50vh;
+                top: 10vh;
             }
             @media screen and (max-width: 850px) {
                 grid-template-columns: 1fr;
-                top: 70vh;
+                top: 10vh;
             }
             @media screen and (max-width: 600px) {
                 grid-template-columns: 1fr;
-                top: 70vh;
+                top: 10vh;
             }
             .PP {
                 @media screen and (max-width: 1215px) {}

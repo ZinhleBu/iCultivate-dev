@@ -78,7 +78,7 @@ export default function SSRPage() {
 
   return (
     <>
-      <div className="mb-5" data-testid="csr">
+      <Container fullWidth className="mb-5" data-testid="csr">
         <div className={classes.backDrop} >
         <Container className={classes.containerCourseSelected}>
           <div className={classes.csrClasses} data-testid="csr-classes">
@@ -151,7 +151,7 @@ export default function SSRPage() {
             </Typography>
             </Grid>
         </Container>
-      </div>
+      </Container>
 
 
 

@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import HoverRating from "../components/HoverRating";
 import Button from '@material-ui/core/Button';
+import { Container } from '@material-ui/core';
 
 export default function Course() {
 
@@ -13,17 +14,17 @@ export default function Course() {
 
 
 
-            <><div className="category-container">
+            <><Container fullWidth className="category-container">
                 <ul className="category-ul">
                     <li className="category-card">
                         <a href="/coleSteele" className="category-item">
 
                             <div className="categoryImg-1"></div>
                             <h1 className="category-title">
-                                The complete brand strategy course
+                                Cultivating your side hustle
                             </h1>
                             <p className="course-owner">
-                                Colt Steele
+                                Kim
                             </p>
                             <HoverRating />
                             <h2 className="course-price">R18</h2>
@@ -122,7 +123,7 @@ export default function Course() {
 
                 </ul>
                 
-            </div></>
+            </Container></>
 
            
 

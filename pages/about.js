@@ -38,11 +38,12 @@ const useStyles = makeStyles((theme) => ({
     appBar: {
         borderBottom: `0px solid ${theme.palette.divider}`,
     },
-    toolbar: {
-        flexWrap: 'wrap',
-    },
-    toolbarTitle: {
-        flexGrow: 1,
+    abtDesc: {
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+
     },
     link: {
         margin: theme.spacing(1, 1.5),
@@ -90,7 +91,7 @@ const tiers = [
     },
     {
         title: 'Premium Pro',
-        price: '30',
+        price: '105',
         description: ['Mentorship Group Sessions', 'Career Incubator', 'Mentor One-on-One', 'Skills Workshop', 'Skills Tutorial', 'Networking and pitch Events'],
 
         buttonText: 'Contact us',
@@ -130,57 +131,19 @@ export default function About() {
                 <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                     About
                 </Typography>
-                <Typography variant="h5" spacing={2} align="center" color="textSecondary" component="p">
-                    <Box  >
+                <Typography className={classes.abtDesc} variant="h5" spacing={2} align="left" display="flex" color="textSecondary" component="p">
+                    <div >
                     iCultivate was born from the Youth Power Hack initiative organised by the Youth Power Panel, Restless Development, Project Everyone, and Unilever. Based in South Africa, the team comprises of Sibahle Magadlela and Kimberly Bediako.
-                    </Box>
-                    <Box>
+                    </div>
+                    <div>
                      iCultivate is an online platform that aims to offer inclusive and sustainable opportunities through an e-learning website and community-based training to cultivate South African youth towards employment and viable entrepreneurs.
-                    </Box>
+                    </div>
                 </Typography>
             </Container>
             {/* End hero unit */}
-            <Container maxWidth="md" component="main">
-                <Grid container spacing={5} alignItems="flex-end">
-                    {tiers.map((tier) => (
-                        // Enterprise card is full width at sm breakpoint
-                        <Grid item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={4}>
-                            <Card>
-                                <CardHeader
-                                    title={tier.title}
-                                    subheader={tier.subheader}
-                                    titleTypographyProps={{ align: 'center' }}
-                                    subheaderTypographyProps={{ align: 'center' }}
-                                    action={tier.title === 'Pro' ? <StarIcon /> : null}
-                                    className={classes.cardHeader}
-                                />
-                                <CardContent>
-                                    <div className={classes.cardPricing}>
-                                        <Typography component="h2" variant="h3" color="textPrimary">
-                                            R{tier.price}
-                                        </Typography>
-                                        <Typography variant="h6" color="textSecondary">
-                                            /mo
-                                        </Typography>
-                                    </div>
-                                    <ul>
-                                        {tier.description.map((line) => (
-                                            <Typography component="li" variant="subtitle1" align="center" key={line}>
-                                                {line}
-                                            </Typography>
-                                        ))}
-                                    </ul>
-                                </CardContent>
-                                <CardActions>
-                                    <Button fullWidth variant={tier.buttonVariant} color="primary">
-                                        {tier.buttonText}
-                                    </Button>
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Container>
+           <Container >
+               
+           </Container>
             {/* Footer */}
             <Container maxWidth="md" component="footer" className={classes.footer}>
                 <Grid container spacing={4} justifyContent="space-evenly">
